@@ -1,0 +1,186 @@
+{% extends 'main.html' %}
+{% block contenido %}
+
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img style="width: 100%;"  class="card-img style="width: 100%;"-top mb-5 mb-md-0" src="{{url_for('static', filename='images/habitacion.jpg' )}}" /></div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">SKU: 001</div>
+                        <h1 class="display-5 fw-bolder">Habitacion sencilla</h1>
+                        <div class="fs-5 mb-5">
+                            <span class="text-decoration-line-through">$150.000</span>
+                            <span>$100.000/noche</span>
+                        </div>
+                        <p class="lead">Habitación con capacidad para cuatro personas, con cama doble. Ambientada en estilo clasico, gran iluminación. Adcionalmente la habitación dispone de baño con ducha caliente, desayuno y television satelital.</p>
+                        <div class="d-flex">
+                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Reserva ahora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<section class="py-5 border-bottom">
+    <div class="container px-5 my-5 px-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Comentarios de la habitacion</h2>
+            <p class="lead mb-0">Recientes:</p>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- Testimonial 1-->
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-1">Amamos el ambiente del lugar y todas sus comodidades</p>
+                                <div class="small text-muted">- Jsperez, Bogota</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2-->
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-1">Recomendado tanto para estadias largas y cortas, la mejor comodidad en el area.</p>
+                                <div class="small text-muted">- Briveros, Funza</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="py-5 bg-light">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4">Tambien te puedén interesar:</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img style="width: 100%;" src="{{url_for('static', filename='images/habitacion2.jpg' )}}" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Habitación familiar</h5>
+                                    <!-- Product price-->
+                                    $400.000/noche</br>
+                                    Capacidad de hasta 10 personas
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img style="width: 100%;" class="card-img style="width: 100%;"-top" src="{{url_for('static', filename='images/habitacion3.jpg' )}}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Suite 5</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$400.000</span>
+                                    $300.000/noche</br>
+                                    Disfruta de la máxima comodidad disponible
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <img style="width: 100%;" class="card-img style="width: 100%;"-top" src="{{url_for('static', filename='images/habitacion4.jpg' )}}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Habitación deluxe</h5>
+                                    <!-- Product price-->
+                                    <span class="text-muted text-decoration-line-through">$200.000</span>
+                                    $180.000/noche</br>
+                                    Perfecta para estadias de pareja
+                                </div>
+                            </div>
+                            
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            
+                            <img style="width: 100%;" class="card-img style="width: 100%;"-top" src="{{url_for('static', filename='images/habitacion5.jpg' )}}" alt="..." />
+                            
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    
+                                    <h5 class="fw-bolder">Habitación plan camp</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
+                                    
+                                    $200.000/noche</br>
+                                    Perfecta para los grupos de 4 personas
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver ahora</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Marriot</p></div>
+        </footer>
+        <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js' )}}"></script>
+    </body>
+</html>
+
+{% endblock %}

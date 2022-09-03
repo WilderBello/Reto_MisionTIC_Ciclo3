@@ -1,0 +1,40 @@
+{% extends "main.html" %}
+{% block contenido %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <img src="{{url_for('static', filename='images/signup.jpg')}}" class="ibg"/>
+            </div>
+        </div>
+        <div class="col">
+            <div class="text-end">
+                <h1></h1>
+            </div>
+
+            <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+
+            <!-- Login -->
+            <form action="/login" , method="post">
+                <div class="mb-4">
+                    <label for="Username" class="form-label">Username</label>
+                    {{form.Username (class="form-control")}}</br>
+                    <label for="Password" class="form-label">Password</label>
+                    {{form.Password (type="Password", class="form-control")}}</br>
+                </div>
+
+                <div class="d-grid">
+                    {{form.iniciar (class="btn btn-primary")}} {{form.hidden_tag()}}
+                </div>
+                <div class="my-3">
+                    <span>No tienes cuenta? <a href="/signup">Registrate</a></span></br>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+{% endblock %}

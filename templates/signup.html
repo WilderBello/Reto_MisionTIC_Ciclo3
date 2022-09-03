@@ -1,0 +1,66 @@
+{% extends "main.html" %}
+{% block contenido %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="container">
+            <img src="{{url_for('static', filename='images/signup.jpg')}}" class="ibg"/>
+        </div>
+        </div>
+
+        <div class="col">
+            <div class="text-end">
+                
+            </div>
+
+            <h2 class="fw-bold text-center py-5">Registrate a nuestra comunidad</h2>
+
+            <!-- Login -->
+
+
+
+            <form action="/signup" , class="row g-2" , method="post">
+
+
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nombres</label>
+                    {{form.Nombres(class="form-control")}}
+                </div>
+                <div class="col-md-6">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    {{form.Apellidos(class="form-control")}}
+                </div>
+                <div class="col-md-6">
+                    <label for="cedula" class="form-label">Cedula</label>
+                    {{form.Id(class="form-control")}}
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo electronico</label>
+                    {{form.Correo(class="form-control")}}
+                </div>
+                <div class="col-md-6">
+                    <label for="celular" class="form-label">Celular</label>
+                    {{form.Celular(class="form-control")}}
+                </div>
+                <div class="col-md-6">
+                    <label for="username" class="form-label">Username</label>
+                    {{form.Username(class="form-control")}}
+                </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    {{form.Password(class="form-control",type="password")}}
+                </div>
+                
+                </br></br></br>
+                <div class="d-grid" p-5>
+                    {{form.enviar (class="btn btn-primary")}} {{form.hidden_tag()}}
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="{{url_for('static', filename='js/bootstrap.bundle.min.js' )}}"></script>
+{% endblock %}

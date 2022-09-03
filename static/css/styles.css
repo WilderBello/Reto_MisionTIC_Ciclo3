@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.gradient {
+    background: linear-gradient(90deg, #335bd5 0%, #56da51 100%);
+}
+@keyframes slide-out-tr{0%{transform:translateY(0) translateX(0);opacity:1}to{transform:translateY(-10px) translateX(10px);opacity:0}}
